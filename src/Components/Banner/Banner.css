@@ -1,0 +1,59 @@
+.banner {
+    position: relative;
+    color: white;
+    height: 700px; /* Increased height for a larger background image */
+    background-size: cover; /* Ensures the image covers the entire banner area */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.content {
+    padding-top: 200px; /* Adjusted padding to move content lower */
+    height: auto; /* Changed height to auto for flexibility */
+    padding-left: 30px; /* Increased left padding for better spacing */
+    max-width: 600px; /* Limited width for readability */
+}
+
+.title {
+    font-size: 4rem; /* Increased font size for a more prominent title */
+    font-weight: 800; /* Bold title */
+    padding-bottom: 0.3rem;
+}
+
+.banner_buttons {
+    margin-top: 20px; /* Spacing between title and buttons */
+}
+
+.button {
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0.5rem 2rem; /* Combined padding shorthand */
+    background-color: rgba(51, 51, 51, 0.5);
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.button:hover {
+    color: black;
+    background-color: #e6e6e6; 
+}
+
+.description {
+    width: 100%; 
+    line-height: 1.5; 
+    padding-top: 1rem;
+    font-size: 1.2rem; 
+    max-width: 600px; 
+    height: auto; 
+}
+
+.fade_bottom {
+    position: absolute;
+    bottom: 0; 
+    width: 100%; 
+    height: 7.4em; 
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111)
+}

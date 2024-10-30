@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes items with space between */
+    padding: 20px;
+    background-color: #141414; /* Netflix-like dark background */
+  }
+  
+  .Logo {
+    width: 100px; /* Adjust logo size */
+    cursor: pointer; /* Makes the logo clickable */
+  }
+  
+  .nav-options {
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-select {
+    margin-right: 20px;
+    padding: 5px 10px;
+    background-color: #141414;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .sign-in-button {
+    padding: 5px 15px;
+    background-color: #e50914; /* Netflix red color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .sign-in-button:hover {
+    background-color: #f40612; /* Slightly lighter red on hover */
+  }
+  

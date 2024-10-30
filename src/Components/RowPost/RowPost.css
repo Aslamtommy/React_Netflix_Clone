@@ -1,0 +1,72 @@
+/* General Styling */
+.row {
+    margin-left: 20px; /* Space between the row and the left side */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif; /* Optional: adds a font for better readability */
+}
+
+/* Posters Container */
+.posters {
+    display: flex; /* Flexbox for horizontal alignment */
+    padding: 20px; /* Padding around the posters */
+    overflow-x: auto; /* Allows horizontal scrolling */
+    overflow-y: hidden; /* Prevents vertical scrolling */
+    scroll-snap-type: x mandatory; /* Enables snap scrolling */
+    gap: 10px; /* Adds spacing between posters */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar for Internet Explorer and Edge */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.posters::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari, Opera */
+}
+
+/* Poster Styling */
+.poster {
+    max-height: 250px; /* Maximum height for larger posters */
+    width: auto; /* Width adjusts to maintain aspect ratio */
+    margin-right: 10px; /* Space between posters */
+    scroll-snap-align: start; /* Aligns each poster to the start of the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom and shadow effect on hover */
+    border-radius: 5px; /* Rounded corners for posters */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a layered effect */
+}
+
+.poster:hover {
+    transform: scale(1.08); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Small Poster Styling */
+.smallPoster {
+    max-height: 150px; /* Maximum height for smaller posters */
+    width: auto; /* Width adjusts to maintain aspect ratio */
+    margin-right: 10px; /* Space between posters */
+    scroll-snap-align: start; /* Aligns each poster to the start of the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom and shadow effect on hover */
+    border-radius: 5px; /* Rounded corners for posters */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a layered effect */
+}
+
+.smallPoster:hover {
+    transform: scale(1.08); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .posters {
+        padding: 10px; /* Reduced padding on smaller screens */
+    }
+    
+    .poster, .smallPoster {
+        max-height: 200px; /* Adjust poster size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .poster, .smallPoster {
+        max-height: 150px; /* Further adjust poster size on very small screens */
+    }
+}
