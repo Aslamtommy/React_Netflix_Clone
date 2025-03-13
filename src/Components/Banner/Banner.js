@@ -1,4 +1,4 @@
-import React, { useEffect,useCallback, useState } from 'react'
+import React, { useEffect,  useState } from 'react'
 import './Banner.css'
 import { API_KEY } from '../../Constants/Constants'
 import axios from '../axios'
